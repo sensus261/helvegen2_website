@@ -1,0 +1,8 @@
+[28-May-2021 12:35:12 Europe/Bucharest] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/helvegen/public_html/himmel/inc/configurare.php on line 13
+[28-May-2021 12:35:12 Europe/Bucharest] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/helvegen/public_html/himmel/inc/configurare.php on line 15
+[28-May-2021 12:36:09 Europe/Bucharest] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/helvegen/public_html/himmel/inc/configurare.php on line 15
+[28-May-2021 12:38:58 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/helvegen/public_html/himmel/inc/configurare.php:11
+Stack trace:
+#0 /home/helvegen/public_html/himmel/index.php(7): include_once()
+#1 {main}
+  thrown in /home/helvegen/public_html/himmel/inc/configurare.php on line 11
