@@ -31,9 +31,7 @@
 		<header class="pixarts-header">
 			<a href="<?php print $site_url; ?>" class="fake-logo"></a>
 			<a href="<?php print $site_url; ?>" class="fake-pixarts"></a>
-			<video class="pixarts-header-video" muted muted="muted" loop autoplay autoplay="autoplay">
-				<source src="<?php print $site_url; ?>video/header.webm" type="video/webm"></source>
-			</video>
+			<img src="<?php print $site_url; ?>img/main/header.jpg" style="position: absolute;"></img>
 			<div class="pixarts-container">
 				<div class="pixarts-nav">
 					<ul class="l-menu">
@@ -45,7 +43,7 @@
 						<?php } ?>
 						<li><a href="<?php print $site_url; ?>download"><?php print $lang['download']; ?></a></li>
 					</ul>
-					<a href="<?php print $site_url; ?>" class="logo-head"><img src="<?php print $site_url; ?>img/main/logo-head.svg" alt="<?php print $site_title; ?>.ro - Enter The East"></a>
+					<a href="<?php print $site_url; ?>" class="logo-head"><img src="<?php print $site_url; ?>img/main/logo-head.svg" style="width: 100%;" alt="<?php print $site_title; ?>.ro - Enter The East"></a>
 					<ul class="r-menu">
 						<li><a href="<?php print $site_url; ?>ranking/players"><?php print $lang['ranking']; ?></a></li>
 						<li><a href="<?php print $shop_url; ?>" target="_blank">Shop</a></li>

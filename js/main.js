@@ -44,15 +44,15 @@ $( document ).ready(function() {
     }
     //SLIDER END
     //VIDEO ANIMATION HEADER START
-    var $video = $('video');
-    videoElement = $video[0];
-    $video.on('canplaythrough', playheadervideo);
-    if (videoElement.readyState > 3) {
-        playheadervideo();
-    }
-    function playheadervideo() {
-        $("video.pixarts-header-video").addClass("play");
-        videoElement.play();
-    }
+    // var $video = $('video');
+    // videoElement = $video[0];
+    // $video.on('canplaythrough', playheadervideo);
+    // if (videoElement.readyState > 3) {
+    //     playheadervideo();
+    // }
+    // function playheadervideo() {
+    //     $("video.pixarts-header-video").addClass("play");
+    //     videoElement.play();
+    // }
     //VIDEO ANIMATION HEADER END
 });
