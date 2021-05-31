@@ -3,18 +3,18 @@
 	$site_url = "https://localhost/helvegen2_website/";
 	
 	//Game database
-	$host = "localhost";
+	$host = "195.178.102.115";
 	$user = "root";
-	$password = "password";
+	$password = "MYSQLSensus261970";
 
 	//Mail settings
 	$SMTPAuth = true;
 	$SMTPSecure = "ssl";
-	$EmailHost = "mail.helvegen2.com";
+	$EmailHost = "mail.helvegen2.ro";
 	$emailPort = 465;
 	
 	$email_username = "support@helvegen2.com";//gmail account
-	$email_password = "password_key_here";//gmail password
+	$email_password = "rD7tYys9xfRY2pd";//gmail password
 	
 	$paypal_email = "dorin.alexandru.dragan@gmail.com";
 	
