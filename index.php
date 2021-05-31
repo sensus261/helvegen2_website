@@ -55,7 +55,7 @@
 				<a href="<?php print $site_url; ?>download" class="download"></a>
 				<?php if(!$offline) { ?>
 				<div class="stat-box">
-					<strong class="odometer" id="onlineStat"><?php print getStatistics('accounts-created'); ?></strong>
+					<strong class="odometer" id="onlineStat"><?php print getStatistics('players-online'); ?></strong>
 					<span class="info-stat"><?php print $lang['players-online']; ?></span>
 				</div>
 				<div class="stat-box">
@@ -77,7 +77,7 @@
 							<h2><?php print $lang['user-panel']; ?></h2>
 							<?php if(!$database->is_loggedin()) { ?>
 							<div>
-								<span>or</span>
+								<span>sau</span>
 								<a class="p-w-l" href="<?php print $site_url; ?>users/register"><?php print $lang['register']; ?></a>
 							</div>
 							<?php } ?>
@@ -91,17 +91,15 @@
 								<label class="password">
 								<input type="password" name="password" pattern=".{5,16}" maxlength="16" placeholder="<?php print $lang['password']; ?>" <?php if($offline) print 'disabled'; else print 'required'; ?>>
 								</label>
-								<label class="checkbox">
-									<div class="g-recaptcha" data-theme="dark" data-sitekey="<?php print $site_key; ?>" style="border: solid 1px #2f2725;transform: scale(0.46);-webkit-transform: scale(0.46);transform-origin: 0 0;-webkit-transform-origin: 0 0;margin: 10px 0px -18px 0px;border-radius: 4px;"></div>
-								</label>
-								<button type="submit"><b><?php print $lang['login']; ?></b></button>
+								<div class="g-recaptcha" data-theme="dark" data-sitekey="<?php print $site_key; ?>" style="border: solid 1px #2f2725;transform: scale(0.85);-webkit-transform: scale(0.85);transform-origin: 0 0;-webkit-transform-origin: 0 0;margin: 10px 0px 16px 0px;border-radius: 4px;"></div>
+								<button type="submit" style="display: block; margin: 0 auto;"><b><?php print $lang['login']; ?></b></button>
 							</form>
 							<div class="login-add">
 								<div class="lane">
 									<a href="<?php print $site_url; ?>users/lost" class="c-golden"><?php print $lang['forget-password']; ?></a>
 								</div>
 								<div class="lane">
-									<span>No account yet? <a href="<?php print $site_url; ?>users/register" class="c-white">Create an account!</a></span>
+									<span>Nu ai cont? <a href="<?php print $site_url; ?>users/register" class="c-white">Creeaza-ti unul!</a></span>
 								</div>
 							</div>
 							<?php } else { ?>
