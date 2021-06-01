@@ -1,19 +1,24 @@
 <?php
-	//Details database
-	$host = "195.178.102.115";
-	$user  = "root";
-	$password =  "MYSQLSensus261970";
+	require_once "include/dotenv/dot_env.php";
+
+	use Helvegen2ShopDotEnv\DotEnvShop;
+
+	(new DotEnvShop(__DIR__ . '/../.env'))->load();
+
+	$host = getenv('HOST');
+	$user  = getenv('USER');
+	$password =  getenv('PASSWORD');
 	
 	//Site URL - with / at the end, example: http://example.com/ishop/
-	$site_url = "https://localhost/helvegen2_website/shop";
+	$site_url = getenv('SITE_URL');
 	
 	//General settings
-	$server_name = "Metin2CMS";
+	$server_name = getenv('SERVER_NAME');
 	$minim_web_admin_level = 9;
 	
 	//PayPal email - only Business Account
-	$paypal_email = "demo@metin2cms.cf";
+	$paypal_email = getenv('PAYPAL_EMAIL');
 	
 	//No edit
-	$license = "4VXC6-3WSXL-W55RP-AUKZ2";
+	$license = getenv('LICENSE');
 ?>

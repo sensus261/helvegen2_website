@@ -1,26 +1,29 @@
 <?php
-	//Site url - add / at the end, eg: http://metin2cms.cf/mt2/ IMPORTANT!!!
-	$site_url = "https://localhost/helvegen2_website/";
+	require_once "include/dotenv/dot_env.php";
+
+	use Helvegen2DotEnv\DotEnv;
+
+	(new DotEnv(__DIR__ . '/.env'))->load();
+
+	$site_url = getenv('SITE_URL');
 	
 	//Game database
-	$host = "195.178.102.115";
-	$user = "root";
-	$password = "MYSQLSensus261970";
+	$host = getenv('HOST');
+	$user = getenv('USER');
+	$password = getenv('PASSWORD');
 
 	//Mail settings
 	$SMTPAuth = true;
 	$SMTPSecure = "ssl";
-	$EmailHost = "mail.helvegen2.ro";
+	$EmailHost = getenv('SMTP_HOST');
 	$emailPort = 465;
 	
-	$email_username = "support@helvegen2.com";//gmail account
-	$email_password = "rD7tYys9xfRY2pd";//gmail password
+	$email_username = getenv('SMTP_EMAIL');
+	$email_password = getenv('SMTP_PASSWORD');
 	
-	$paypal_email = "dorin.alexandru.dragan@gmail.com";
+	$paypal_email = getenv('PAYPAL_EMAIL');
 	
-	//Register
 	$safebox_size = 1;
 	
-	//Catpcha - https://www.google.com/recaptcha/admin
-	$site_key = "6Ld2sPsaAAAAANv63Qch_FF3LvDzpYRtmkElNDig";
-	$secret_key = "6Ld2sPsaAAAAABr0GSL7Dn1OeBLmsqkE3zEMZNj6";
+	$site_key = getenv('CAPTCHA_SITE_KEY');
+	$secret_key = getenv('CAPTCHA_SECRET_KEY');
