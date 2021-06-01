@@ -1,2 +1,4 @@
 .vscode
 .env
+include/db/api.json
+include/db/ranking.json
